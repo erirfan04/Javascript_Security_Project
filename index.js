@@ -30,6 +30,12 @@ app.get("/users", (req, res) => {
   res.send(users);
 });
 
+// ================= READ =================
+// GET /users
+app.get("/user123", (req, res) => {
+  res.send(users);
+});
+
 // GET /users/:id
 app.get("/users/:id", (req, res) => {
   const user = users.find(u => u.id == req.params.id);
