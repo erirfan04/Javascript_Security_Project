@@ -35,6 +35,10 @@ app.get("/users", (req, res) => {
 app.get("/user123", (req, res) => {
   res.send(users);
 });
+// GET /users
+app.get("/user123456", (req, res) => {
+  res.send(users);
+});
 
 // GET /users/:id
 app.get("/users/:id", (req, res) => {
